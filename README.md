@@ -40,7 +40,7 @@ This project is a photo album web application that supports natural language sea
 2. Optionally add custom labels.
 3. Click the upload button to add the photo to the library.
 
-![Application Screenshot](/Output 2.jpg)
+![Application Screenshot]((https://github.com/anandj25/Photo-Album-AWS/blob/main/FrontEnd/Output/Output%202.jpg))
 
 ## Prerequisites
 
