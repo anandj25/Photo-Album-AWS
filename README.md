@@ -40,7 +40,7 @@ This project is a photo album web application that supports natural language sea
 2. Optionally add custom labels.
 3. Click the upload button to add the photo to the library.
 
-![Application Screenshot](path/to/your/image.png)
+![Application Screenshot](Output 2.jpg)
 
 ## Prerequisites
 
