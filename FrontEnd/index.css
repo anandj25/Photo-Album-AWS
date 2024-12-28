@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    min-height: 100vh;
+}
+
+.photos_title {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+    color: #ff6347;
+}
+
+.container-fluid {
+    padding: 30px 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#search_photos {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#search_photos input {
+    flex: 1;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+#search_photos button {
+    background: #ff6347;
+    color: white;
+    border: none;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#search_photos button:hover {
+    background: #e5533b;
+}
+
+#search_photos .material-icons {
+    font-size: 2rem;
+}
+
+.search_info {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #ccc;
+}
+
+.row {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#searchPhotos {
+    background: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#searchPhotos:hover {
+    background: #e5533b;
+}
+
+.Upload_files h2 {
+    color: #ff6347;
+    margin: 20px 0;
+}
+
+.Upload_files input[type="file"],
+.Upload_files input[type="text"] {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.Upload_files input:hover {
+    border-color: #ff6347;
+}
+
+#upload_files {
+    background: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+#upload_files:hover {
+    background: #e5533b;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <link rel="stylesheet" href="index.css">
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script src="upload.js"></script>
+       <script src="https://sdk.amazonaws.com/js/aws-sdk-2.879.0.min.js"></script>
+       <script>
+           AWS.config.region = 'us-east-1';
+           AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+               IdentityPoolId: 'us-east-1:26874a03-f2c3-4bd3-8094-5dc8d3a04256'
+           });
+       </script>
+   </head>
+   <body>
+       <header class="photos_title">Photos Library</header>
+       <div class="container-fluid">
+           <form action="" method="get" id="search_photos">
+               <input name="search_query" id="search_query" type="text" placeholder="Search Photos Library" autocomplete="off" autofocus>
+               <button type="button">
+                   <i class="large material-icons" id="mic_search" onclick="voiceSearch()">mic</i>
+               </button>
+           </form>
+           <p class="search_info">Click the microphone to start or stop recording.</p>
+           <div class="row">
+               <button type="button" id="searchPhotos" onclick="handleLexQuery()">Search</button>
+           </div>
+       </div>
+       <div class="row">
+           <div id="photos_search_results"></div>
+       </div>
+
+       <div class="Upload_files">
+           <h2>Upload Photos</h2>
+           <form action="/action_page.php">
+               <input type="file" id="uploaded_file" name="filename">
+               <input type="text" id="custom_labels" name="custom_labels" placeholder="Custom labels">
+           </form>
+           <button id="upload_files" onclick="uploadPhoto()">Upload</button>
+       </div>
+   </body>
+</html>
